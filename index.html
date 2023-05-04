@@ -7,10 +7,52 @@
   <link rel="stylesheet" href="./dist/output.css">
   <title>AGITACADEMY</title>
 </head>
+<style>
+  .stud{
+    background-image: url(images/application.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .trans{
+    background-color: rgba(17,69,101,0.5);
+  }
+</style>
 <body>
-  <h1 class="text-3xl font-bold underline bg-green-500">
-    Hello world!
-    <h1>Hello mike</h1>
-  </h1>
+<section class="w-[100%] h-[50px]  shadow-md">
+  <nav class="w-[90%] h-[50px] mx-auto">
+    <div class="w-[70px] h-[50px]  ">
+      <img src="images/AgitAcademyLogo.png" alt="agitLogo">
+    </div>
+  </nav>
+  <!-- for desktop -->
+</section>
+<section class="w-[100%] md:hidden lg:flex hidden bg-red-500">
+    <div class="w-[40%] h-[95vh] bg-orange-50 stud">
+        <div class="w-[100%] h-full trans">
+
+        </div>
+    </div>
+</section>
+<!-- for ipad -->
+<section class="w-[100%] md:flex lg:hidden hidden bg-red-500">
+  <div class="w-[100%] h-[95vh] bg-orange-50 stud">
+      <div class="w-[100%] h-full trans relative">
+          <div class="w-[90%] bg-white rounded-3xl shadow-lg left-10 h-[800px] absolute -bottom-[30%]">
+            <!-- remove default height -->
+          </div>
+      </div>
+  </div>
+</section>
+<!-- for mobile -->
+<section class="w-[100%] block md:hidden bg-red-500">
+  <div class="w-[100%] h-[95vh] bg-orange-50 stud">
+    <div class="w-[100%] h-full trans relative">
+      <div class="w-[90%] bg-white rounded-3xl shadow-lg left-5 h-[400px] absolute -bottom-[10%]">
+        <!-- remove default height -->
+      </div>
+  </div>
+  </div>
+</section>
 </body>
 </html>
