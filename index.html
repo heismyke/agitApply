@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Merriweather&display=swap" rel="stylesheet">
   <title>AGITACADEMY</title>
 </head>
 <style>
@@ -17,21 +20,75 @@
   .trans{
     background-color: rgba(17,69,101,0.5);
   }
+  .onlinetext{
+    font-family: 'Merriweather', serif;
+  }
 </style>
 <body>
 <section class="w-[100%] h-[50px]  shadow-md">
-  <nav class="w-[90%] h-[50px] mx-auto">
+  <nav class="w-[90%] h-[50px] mx-auto flex justify-between items-center">
     <div class="w-[70px] h-[50px]  ">
       <img src="images/AgitAcademyLogo.png" alt="agitLogo">
+    </div>
+    <div>
+      <h1 class=" lg:text-2xl  md:text-xl text-lg onlinetext">Online application</h1>
     </div>
   </nav>
   <!-- for desktop -->
 </section>
-<section class="w-[100%] md:hidden lg:flex hidden bg-red-500">
-    <div class="w-[40%] h-[95vh] bg-orange-50 stud">
+<section class="w-[100%] md:hidden lg:flex hidden ">
+    <div class="w-[40%] h-[800px] stud">
         <div class="w-[100%] h-full trans">
-
+          
         </div>
+    </div>
+    <div class="w-[60%] ">
+      <!-- <div class="w-[100%]  pl-5">
+        <h1 class="text-5xl onlinetext">Online application</h1>
+      </div> -->
+      <div class="w-[70%]  mx-auto mt-[40px]">
+        <form action="" method="post">
+          <select name="title" id="" class="w-[100%] h-[60px] mb-5 border rounded-lg pl-3 text-[#A9A9A9]">
+            <option value="">TITLE</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Ms">Ms</option>
+          </select>
+          <input type="text" placeholder="FULLNAME" class="w-[100%] h-[60px] mb-5 outline-0 border rounded-lg pl-3" required>
+          <input type="text" placeholder="EMAIL" class="w-[100%] h-[60px] mb-5 outline-0 border rounded-lg pl-3" required>
+          <input type="text" placeholder="PHONE NUMBER" class="w-[100%] h-[60px] mb-5 outline-0 border rounded-lg pl-3" required>
+          <div class="w-[100%] flex justify-between">
+            <input type="date" placeholder="BIRTHDATE" class="w-[45%] h-[60px] mb-5 outline-0 border rounded-lg pl-3 text-[#A9A9A9]" required>
+          <select name="gender" id="" class="w-[45%]  h-[60px] mb-5 outline-0 border rounded-lg pl-3 text-[#A9A9A9]">
+            <option value="">GENDER</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+          </div>
+          <input type="text" placeholder="OCCUPATION" class="w-[100%] h-[60px] mb-5 outline-0 border rounded-lg pl-3" required>
+          <input type="text" placeholder="ADDRESS" class="w-[100%] h-[60px] mb-5 outline-0 border rounded-lg pl-3" required>
+          <select name="knowledge" id="" class="w-[100%] h-[60px] mb-5 outline-0 border rounded-lg pl-3 text-[#A9A9A9]">
+            <option value="">IT KNOWLEDGE</option>
+            <option value="BASIC">BASIC</option>
+            <option value="INTERMEDIATE">FINTERMEDIATE</option>
+            <option value="ADVANCE">ADVANCE</option>
+          </select>
+          <select name="course" id="" class="w-[100%] h-[60px] mb-5 outline-0 border rounded-lg pl-3 text-[#A9A9A9]">
+            <option value="">CHOOSE COURSE</option>
+            <option value="BASIC">Cyber Security and Ethical Hacking</option>
+            <option value="INTERMEDIATE">Web Application Development Using PHP and MySQL</option>
+            <option value="ADVANCE">WEB DEVELOPMENT</option>
+            <option value="BASIC">UI/UX design using HTML / CSS and JavaScript</option>
+            <option value="INTERMEDIATE">Microsoft Azure</option>
+            <option value="ADVANCE">Fundamentals of Python programming</option>
+            <option value="BASIC">Microsoft SharePoint</option>
+            <option value="INTERMEDIATE">Oracle Database Administration</option>
+            <option value="ADVANCE">App Development Using React Js</option>
+          </select>
+        </form>
+      </div>
     </div>
 </section>
 <!-- for ipad -->
