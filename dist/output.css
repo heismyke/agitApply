@@ -855,6 +855,14 @@ video {
   width: 47%;
 }
 
+.w-\[1\%\] {
+  width: 1%;
+}
+
+.w-\[\%\] {
+  width: %;
+}
+
 .items-center {
   align-items: center;
 }
